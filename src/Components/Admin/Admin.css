@@ -1,0 +1,40 @@
+.mainDiv {
+  padding: 0 2rem;
+}
+
+table {
+  width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+tr {
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 8px;
+  padding: 12px;
+}
+
+th {
+  background-color: #0b80a0;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+}
+
+.controlDiv {
+    display: flex;
+    gap: 1rem;
+}
+
+.adminBtn {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fecf62;
+    cursor: pointer;
+    color: 02475b;
+}

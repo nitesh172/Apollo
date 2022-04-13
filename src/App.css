@@ -1,0 +1,25 @@
+/* import google font Poppin */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+
+/* global css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  text-decoration: none;
+  font-family: poppins, sans-serif;
+}
+
+h2 {
+  font-weight: 400;
+  padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 1029px) {
+  h2 {
+    font-size: large;
+    padding: 1rem 2rem;
+  }
+}
+

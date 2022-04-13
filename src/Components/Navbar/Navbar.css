@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  gap: 1rem;
+  padding: 0.4rem 1rem;
+  align-items: center;
+  justify-content: left;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.scroll-shadow {
+  box-shadow: 0 2px 4px hsl(0deg 0% 1% / 10%);
+}
+
+.logo {
+  width: 3rem;
+}
+
+.navLink {
+  padding: 0.8rem;
+  color: #0b80a0;
+  display: flex;
+  border-radius: 8px;
+  transition: all 0.8s ease-in-out;
+}
+
+.navLink span:nth-child(1) {
+  display: none;
+}
+
+.navLink:hover {
+  padding: 0.8rem;
+  background-color: #0b80a0;
+  color: white;
+}
+
+@media screen and (max-width: 530px) {
+  .navLink span:nth-child(1) {
+    display: block;
+  }
+
+  .navLink span:nth-child(2) {
+    display: none;
+  }
+}

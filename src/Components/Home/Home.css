@@ -1,0 +1,29 @@
+.homeBanner {
+  width: 100%;
+}
+
+.doctorList {
+  display: grid;
+  padding: 0 2rem 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+
+@media screen and (max-width: 880px) {
+  .doctorList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .doctorList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .doctorList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

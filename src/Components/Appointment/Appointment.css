@@ -1,0 +1,54 @@
+.appointmentMain {
+  display: flex;
+}
+
+.appointmentMain .appointmentBox {
+  width: 49%;
+  height: 80vh;
+  padding: 2rem;
+  gap: .8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.appointmentMain .appointmentBox:nth-child(1) {
+  padding: .5rem 2rem ;
+}
+
+.bookAppointmentHeading {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.appointmentBanner {
+  width: 100%;
+  height: 75vh;
+  border-radius: 8px;
+}
+
+.appointmentTextfiled {
+  padding-left: 3rem;
+}
+
+.appointmentBtn {
+  width: 100%;
+  padding: 0.8rem 0;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fecf62;
+  color: #02475b;
+  transition: all 0.8s ease-in;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .appointmentMain {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .appointmentMain .appointmentBox {
+    width: 90%;
+    height: auto;
+  }
+}

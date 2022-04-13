@@ -1,0 +1,6 @@
+.appointmentPageMain {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
