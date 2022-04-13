@@ -28,22 +28,23 @@ const appointmentState = {
 
 export const Appointment = () => {
   const [appointment, setAppointment] = useState(appointmentState)
-  const [doctors, setDoctors] = useState([])
-  const [slots, setSlots] = useState([])
-  const [slot, setSlot] = useState("")
-  const [id, setId] = useState("")
-  const [price, setPrice] = useState("")
-  const { vertical, horizontal, open } = state
   const [state, setState] = useState({
     open: false,
     vertical: "top",
     horizontal: "center",
   })
 
-  var today = new Date()
-  var time = today.getHours() + ":00"
+  const handleAppointment = (e) => {
+    const { name, value } = e.target
+    setAppointment((prev) => {
+      return { ...prev, [name]: value }
+    })
+  }
 
-  const navigate = useNavigate()
+  const [doctors, setDoctors] = useState([])
+  const [slots, setSlots] = useState([])
+  const [slot, setSlot] = useState("")
+  const [id, setId] = useState("")
 
   useEffect(() => {
     fetch("https://apollo-appointment.herokuapp.com/doctor")
@@ -54,13 +55,6 @@ export const Appointment = () => {
         setDoctors(res)
       })
   }, [])
-
-  const handleAppointment = (e) => {
-    const { name, value } = e.target
-    setAppointment((prev) => {
-      return { ...prev, [name]: value }
-    })
-  }
 
   function setDoctorSlot() {
     slots.push(slot)
@@ -96,6 +90,15 @@ export const Appointment = () => {
         return res
       })
   }
+
+  const [price, setPrice] = useState("")
+
+  const navigate = useNavigate()
+
+  var today = new Date()
+  var time = today.getHours() + ":00"
+
+  const { vertical, horizontal, open } = state
 
   const handleChange = (event) => {
     setPrice(event.target.value.price)
