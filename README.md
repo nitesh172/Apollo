@@ -1,3 +1,81 @@
+---
+# Apollo Hospital Appointment Project
+---
+
+# Welcome 👋
+
+---
+
+## About this project: 🙌
+
+> This is a mini project.
+
+---
+
+#### Presentation & Demo Video:
+
+- **[Checkout The Demo Video](https://drive.google.com/file/d/171c0oeWCyX4nOMwzSqwLa5ThUyiMnDzM/view?usp=sharing)**
+
+### Pages & Features 👇
+
+- `Home Page`: Nav Bar with landing page which show attratice doctor card and detail.
+- `Booking Appointment Page`: User can book appointment by booking Page.
+- `Appointment Page`: User see this after booking sucessfully see realtime status of booking.
+- `Admin Page`: Here, Doctor see his/her history of Appointment.
+- `API`: I also create Rest-full Api using express app to fetch the data from server.
+
+---
+
+### How To Use ✅
+
+First you have to have to go to the `Home Page`.In homepage show doctors with specialist you have to click on book appointment on doctor and also top of the navbar to navigate booking page where you can book the appointment by fill the form detail such as Full Name, email, select Doctor, description about treatment and pick time slot today. After Booking Sucessfuly you will recive a pop message at top right corner booked sucessfully and redirect to appointment timeline page where you see the full real time detail of appointment. there is admin panel also for doctors to check history of his/her appointment.
+
+---
+
+### Tech Stack Used 🔧
+
+- `MERN Stack`
+
+---
+
+### Screenshots :camera:
+
+---
+
+- **Home Page**
+
+---
+
+![1](https://www.dropbox.com/s/mz7cux74338ay9i/homepage.png?raw=1)
+![2](https://www.dropbox.com/s/zbgej6fqp3bo72u/homepage1.png?raw=1)
+
+---
+
+- **Appointment Booking Page**
+
+---
+
+![1](https://www.dropbox.com/s/gxjzvobldvtg0js/appointmentbookingpage.png?raw=1)
+
+---
+
+- **Appointment Timeline Page**
+
+---
+
+![1](https://www.dropbox.com/s/f880w1yyruxxhns/timeline1.png?raw=1)
+![2](https://www.dropbox.com/s/apkfu2npk81v59x/timeline2.png?raw=1)
+
+---
+
+- **Admin Page for Doctor**
+
+---
+
+![1](https://www.dropbox.com/s/c6zooart048604j/adminpage.png?raw=1)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
